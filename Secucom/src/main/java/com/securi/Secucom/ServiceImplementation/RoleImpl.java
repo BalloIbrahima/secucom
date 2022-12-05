@@ -3,11 +3,13 @@ package com.securi.Secucom.ServiceImplementation;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.securi.Secucom.Models.Role;
 import com.securi.Secucom.Repository.RoleRepos;
 import com.securi.Secucom.Service.RoleService;
 
+@Service
 public class RoleImpl implements RoleService {
 
     @Autowired

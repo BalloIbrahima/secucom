@@ -37,8 +37,8 @@ public class Collaborateur {
 
     @ManyToMany
     @JoinTable(name = "RoleCollaborateurs", joinColumns = {
-            @JoinColumn(name = "id_role") }, inverseJoinColumns = {
-                    @JoinColumn(name = "id_collaborateur") })
+            @JoinColumn(name = "id_collaborateur") }, inverseJoinColumns = {
+                    @JoinColumn(name = "id_le") })
     List<Role> roles = new ArrayList<>();
 
 }

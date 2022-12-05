@@ -21,4 +21,11 @@ public interface CollaborateurService {
     // login d'un Collaborateur
     Collaborateur login(String pseudo, String password);
 
+    //recupere par pseudo
+    Collaborateur findByPseudo(String pseudo);
+
+    //recuperer par nom et prenom
+    Collaborateur findByNomPrenom(String nom, String prenom);
+
+
 }
